@@ -1,0 +1,23 @@
+.list__allTaskButton {
+  border: none;
+  color: teal;
+  background-color: white;
+  font-size:  18px;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.list__allTaskButton:hover {
+  transition: 1s;
+  color: rgb(9, 207, 207);
+}
+
+@media(max-width:767px) {
+  .allTasksButtons {
+    display: grid;
+  }
+}
+
+.list__allTaskButton:disabled {
+ color: rgb(156, 156, 156);
+}
