@@ -3,7 +3,7 @@ const Buttons = (props) =>
  ( props.tasks.length > 0 && (
   <div className="allTasksButtons"> 
       <button className={`list__allTaskButton `}>
-        {props.hideTaskButtons ? "pokaż ukończone" : "urkyj ukończone"}
+        {props.hideTaskButtons ? "Pokaż ukończone" : "Ukryj ukończone"}
       </button>
       <button className="list__allTaskButton"
         disabled={props.tasks.every(({ done }) => done)}>
