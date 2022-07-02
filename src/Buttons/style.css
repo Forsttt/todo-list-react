@@ -5,10 +5,10 @@
   font-size:  18px;
   font-weight: 500;
   font-family: inherit;
+  transition: 1s;
 }
 
 .list__allTaskButton:hover {
-  transition: 1s;
   color: rgb(9, 207, 207);
 }
 
