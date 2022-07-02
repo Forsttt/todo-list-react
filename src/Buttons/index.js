@@ -7,7 +7,7 @@ const Buttons = (props) =>
       </button>
       <button className="list__allTaskButton"
         disabled={props.tasks.every(({ done }) => done)}>
-        ukończ wszystkie
+        Ukończ wszystkie
        </button>
     </div>
     )
