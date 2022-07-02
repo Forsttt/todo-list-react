@@ -6,7 +6,7 @@ import Header from "./Header";
 
 const tasks = [
   { id: 1, content: "ubrać się", done: true },
-  { id: 2, content: "umyć się", done: true },
+  { id: 2, content: "umyć się", done: false },
 ];
 
 const hideTaskButtons = false;
