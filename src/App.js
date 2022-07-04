@@ -14,7 +14,6 @@ const hideTaskButtons = false;
 function App() {
   return (
     <>
-    
     <Header title="Lista zadań"/>
     <main>
 
@@ -31,6 +30,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;
