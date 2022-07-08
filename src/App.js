@@ -9,7 +9,7 @@ const tasks = [
   { id: 2, content: "Wynieść śmieci", done: false },
 ];
 
-const hideTaskButtons = false;
+const hideTasks = false;
 
 function App() {
 return (
@@ -22,8 +22,8 @@ return (
       />
       <Section
         title="Lista zadań"
-        extraHeaderContent={<Buttons tasks={tasks} hideTaskButtons={hideTaskButtons} />}
-        body={<Tasks tasks={tasks} hideTaskButtons={hideTaskButtons} />}
+        extraHeaderContent={<Buttons tasks={tasks} hideTasks={hideTasks} />}
+        body={<Tasks tasks={tasks} hideTasks={hideTasks} />}
       />
     </main>
   </>
