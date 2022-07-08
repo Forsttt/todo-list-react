@@ -2,7 +2,8 @@ import "./style.css"
 const Buttons = (props) => 
  (props.tasks.length > 0 && (
   <div className="allTasksButtons"> 
-    <button className={`list__allTaskButton `}>
+    <button onClick={props.toggleHideTasks} 
+      className={`list__allTaskButton`}>
       {props.hideTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
     </button>
     <button className="list__allTaskButton"
