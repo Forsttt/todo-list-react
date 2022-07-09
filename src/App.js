@@ -5,16 +5,20 @@ import Section from "./Section";
 import Header from "./Header";
 import { useState } from "react";
 
-const tasks = [
+function App() {
+const [hideTasks,setHideTasks] = useState(false);
+
+const [tasks,setTasks] = useState([
   { id: 1, content: "Odrobić lekcje", done: true },
   { id: 2, content: "Wynieść śmieci", done: false },
-];
-
-function App() {
-const [hideTasks, setHideTasks] = useState(false);
+]);
 
 const toggleHideTasks = () => {
   setHideTasks(hideTasks => !hideTasks);
+};
+
+const removeTask = (id) => {
+  setTasks(tasks => tasks.filter(task => task.id !== id));
 };
 
 return (
@@ -37,6 +41,7 @@ return (
         <Tasks 
           tasks={tasks} 
           hideTasks={hideTasks} 
+          removeTask={removeTask}
         />}
     />
   </main>
