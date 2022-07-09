@@ -8,6 +8,7 @@ const Tasks = (props) => (
       className={`list__item
        ${task.done && props.hideTasks ? "list__item--hidden" : ""}`}>
     <button 
+      onClick={() => props.toggleTaskDone(task.id)}
       className={`list__button`}> 
       {task.done ? "✔" : ""}
     </button>
