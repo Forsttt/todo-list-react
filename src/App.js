@@ -9,8 +9,7 @@ function App() {
   const [hideTasks, setHideTasks] = useState(false);
 
   const [tasks, setTasks] = useState([
-    { id: 1, content: "Odrobić lekcje", done: true },
-    { id: 2, content: "Wynieść śmieci", done: false },
+    
   ]);
 
   const toggleHideTasks = () => {
