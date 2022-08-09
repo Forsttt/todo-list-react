@@ -1,9 +1,9 @@
 import "./style.css"
-const Buttons = (props) => 
- (props.tasks.length > 0 && (
-  <div className="allTasksButtons"> 
+const Buttons = (props) =>
+(props.tasks.length > 0 && (
+  <div className="allTasksButtons">
     <button
-      onClick={props.toggleHideTasks} 
+      onClick={props.toggleHideTasks}
       className={`list__allTaskButton`}>
       {props.hideTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
     </button>
@@ -15,5 +15,5 @@ const Buttons = (props) =>
     </button>
   </div>
 ));
-  
+
 export default Buttons;

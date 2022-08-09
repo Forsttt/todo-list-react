@@ -3,10 +3,10 @@ const Section = ({title,body,extraHeaderContent}) => (
     <section className="section">
       <header className="section__header list__header">
         {title}
-      {extraHeaderContent}
+        {extraHeaderContent}
       </header>
-      {body}
+        {body}
     </section>
-)
+);
 
 export default Section;
