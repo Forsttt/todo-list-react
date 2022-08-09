@@ -26,7 +26,7 @@
   background-color: teal;
   border: none;
   font-family: inherit;
-  transition: 1s;
+  transition: 0.50s;
 }
 
 .form__button:hover {

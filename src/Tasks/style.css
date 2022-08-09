@@ -34,7 +34,7 @@
   border: none;
   background-color: green;
   color: white;
-  transition: 1s;
+  transition: 0.50s;
 }
 
 .list__content {
