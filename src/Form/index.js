@@ -4,17 +4,24 @@ import "./style.css";
 const Form = (props) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
+  const inputContent = (event) => {
+    setNewTaskContent(event.target.value)
+  };
+
   const onFormSubmit = (event) => {
     event.preventDefault();
-    props.addNewTask(newTaskContent.trim());
     setNewTaskContent("");
+    if (newTaskContent.length > 0 && newTaskContent !== (' ')
+    ) {
+      return props.addNewTask(newTaskContent.trim())
+    }
   };
 
   return (
     <form className="form" onSubmit={onFormSubmit}>
-      <input 
+      <input
         value={newTaskContent}
-        onChange={(event) => {setNewTaskContent(event.target.value)}}
+        onChange={inputContent}
         className="form__input"
         name="textbox"
         maxLength="80"
