@@ -10,11 +10,11 @@ const Form = (props) => {
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    setNewTaskContent("");
-      if (newTaskContent.length > 0 && newTaskContent !== (' ')
-    ){
-      return props.addNewTask(newTaskContent.trim())
+    if (newTaskContent.trim() === "") {
+      return;
     }
+    setNewTaskContent("");
+    props.addNewTask(newTaskContent.trim())
   };
 
   return (
