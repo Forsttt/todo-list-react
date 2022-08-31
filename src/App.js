@@ -9,7 +9,7 @@ function App() {
   const [hideTasks, setHideTasks] = useState(false);
 
   const [tasks, setTasks] = useState([
-    
+
   ]);
 
   const toggleHideTasks = () => {
