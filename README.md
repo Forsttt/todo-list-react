@@ -6,6 +6,10 @@ Basic to do list made with react which allows user to add new tasks,mark them as
 
 https://forsttt.github.io/todo-list-react/
 
+## Preview
+
+![preview](images/preview2.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:
