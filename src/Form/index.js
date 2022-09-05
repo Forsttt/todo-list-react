@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./style.css";
 
-const Form = (props) => {
+const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
-  const inputContent = (event) => {
-    setNewTaskContent(event.target.value)
+  const inputContent = ({ target }) => {
+    setNewTaskContent(target.value)
   };
 
   const onFormSubmit = (event) => {
@@ -14,7 +14,7 @@ const Form = (props) => {
       return;
     }
     setNewTaskContent("");
-    props.addNewTask(newTaskContent.trim())
+    addNewTask(newTaskContent.trim())
   };
 
   return (
