@@ -17,6 +17,9 @@
   .allTasksButtons {
     display: grid;
   }
+  .list__allTaskButton {
+    padding: 5px;
+  }
 }
 
 .list__allTaskButton:disabled {
