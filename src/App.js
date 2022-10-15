@@ -3,14 +3,20 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 
 function App() {
   const [hideTasks, setHideTasks] = useState(false);
 
-  const [tasks, setTasks] = useState([
+  const getLocalTasks = () => {
+    return JSON.parse(localStorage.getItem("content")) || [];
+  }
+  const [tasks, setTasks] = useState(getLocalTasks);
 
-  ]);
+  useEffect(() => {
+    localStorage.setItem("content", JSON.stringify(tasks));
+  }, [tasks]);
 
   const toggleHideTasks = () => {
     setHideTasks(hideTasks => !hideTasks);
